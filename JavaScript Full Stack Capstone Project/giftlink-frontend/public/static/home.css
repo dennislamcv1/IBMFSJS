@@ -1,0 +1,19 @@
+/* Task 1: Style the body */
+body {
+    /* insert code here */
+}
+
+/* Task 2: Create a pseudo-element for the background and blur */
+body::before {
+    /* insert code here */
+}
+
+/* Task 3: Style the content area */
+.content {
+    /* insert code here */
+}
+
+/* Task 4: Add styles for headings, paragraphs, and buttons */
+h1, h2, .lead, .btn-primary {
+    /* insert code here */
+}

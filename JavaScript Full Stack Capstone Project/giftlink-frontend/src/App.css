@@ -1,0 +1,189 @@
+
+html {
+  overflow-y: scroll;
+}
+/* Primary color for headers and important buttons */
+.custom-card-title,
+.btn-primary {
+  background-color: #0056b3; /* Strong, confident blue */
+  color: white; /* For text on primary color background */
+}
+
+/* Secondary color for hover states and highlights */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #009688; /* Teal */
+}
+
+/* General background color */
+body,
+.page-background {
+  background-color: #f4f4f4; /* Light grey */
+  margin-right: calc(100vw - 100%);
+}
+
+/* Background color for cards */
+.card {
+  background-color: #ffffff; /* White */
+}
+
+/* Text color */
+.card-title,
+.card-text {
+  color: #333333; /* Darker grey */
+}
+
+/* Subtle accent color */
+.text-muted {
+  color: #6c757d; /* Muted grey */
+}
+
+/* Success color for messages or confirmation */
+.text-success,
+.btn-success {
+  color: #28a745; /* Fresh green */
+}
+
+.container {
+  padding: 2rem 15%; /* Adds more space on the sides */
+}
+
+.row {
+  justify-content: space-around; /* Adds space between cards */
+}
+
+.product-card {
+  margin: 1rem 0; /* Adds space above and below each card */
+  border-radius: 10px; /* Rounded corners for card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures nothing spills out of the card's rounded corners */
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px; /* Fixed height, adjust as needed */
+  position: relative; /* Set a reference for absolute positioned children */
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.image-placeholder img {
+  position: absolute; /* Position it over the placeholder */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area without stretching */
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.no-image-available {
+  width: 100%;
+  height: 200px; /* Adjust based on your design */
+  background-color: #ddd; /* A neutral background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #666;
+  text-transform: uppercase;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+
+.card-body {
+  padding: 1rem;
+  flex-grow: 1; /* Make body grow to fill space */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.date-added {
+  margin-top: auto; /* Pushes everything else to the top, and this to the bottom */
+}
+
+.card-footer {
+  padding: 0;
+  border-top: none;
+}
+
+.btn-primary {
+  display: block; /* Disables inline-block default of buttons */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Includes padding and border in the width */
+}
+/* Highlight condition and age with color */
+.list-group-item-success {
+  color: #28a745; /* Green text color for new items */
+}
+
+.list-group-item-warning {
+  color: #ffc107; /* Yellow text color for older items */
+}
+
+/* Customize the navbar brand and links */
+.navbar-brand, .nav-link {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: 500; /* Medium weight for better visibility */
+}
+
+/* Increase the font size and weight of nav-item */
+.nav-item .nav-link {
+  font-size: 1.1rem; /* Larger font size for nav links */
+  font-weight: bold; /* Bold font weight for emphasis */
+  color: #0056b3; /* Choose a color that stands out */
+}
+
+/* Change the background color of the navbar */
+.navbar {
+  background-color: #f8f9fa; /* A light color for contrast with the text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+/* Add a hover effect to nav links */
+.nav-item .nav-link:hover {
+  color: #004085; /* A darker shade for hover state */
+  text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+/* Highlight the active nav link */
+.nav-item.active .nav-link, .nav-item .nav-link.active {
+  color: #d63384; /* A distinct color for the active page */
+  background-color: transparent; /* Optional: Adds a background color to the active link */
+  text-decoration: underline; /* Underlines the active link */
+  font-weight: bold; /* Makes the active link bold */
+}
+
+/* Style for login button */
+.nav-link.login-btn {
+  background-color: #28a745; /* A green color for login */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link.login-btn:hover,
+.nav-link.login-btn:focus {
+  background-color: #218838; /* A darker green on hover/focus for login */
+  color: white;
+  text-decoration: none;
+}
+
+/* Style for logout button */
+.nav-link.logout-btn {
+  background-color: #dc3545; /* A red color for logout */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link.logout-btn:hover,
+.nav-link.logout-btn:focus {
+  background-color: #c82333; /* A darker red on hover/focus for logout */
+  color: white;
+  text-decoration: none;
+}
